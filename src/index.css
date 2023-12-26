@@ -253,18 +253,20 @@ body {
 }
 
 .nav-button {
-  background-color: #fdfdfd; /* Цвет кнопки "Товары" */
-  color: #fdfdfd; /* Цвет текста кнопки "Товары" */
+  width: 80px;
+  height:  40px;
+  background-color: rgb(230, 230, 230); /* Цвет кнопки "Товары" */
+  color: #c24004; /* Цвет текста кнопки "Товары" */
   padding: 10px 20px;
-  border: 1px solid #ffffff; /* Коричневая рамка */
+  border: 1px solid #c46003; /* Коричневая рамка */
   border-radius: 4px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 6px;
   transition: background-color 0.3s ease-in-out; /* Анимация при наведении */
 }
 
 .nav-button:hover {
-  background-color: #f0f0f0; /* Цвет кнопки "Товары" при наведении */
+  background-color: #000000; /* Цвет кнопки "Товары" при наведении */
 }
 
 /* Остальные стили оставим без изменений */
@@ -515,5 +517,22 @@ body {
 
 .bottom-text p {
   margin: 0;
-  color: #ffffff; /* Цвет текста */
+  color: #cac6c6; /* Цвет текста */
 }
+.new-button {
+  position: absolute;
+  width: 100px;
+  height: 40px;
+  top: 104px;
+  left: 1010px;
+  font-size: 16px;  
+  background-color: #F5F5DC(204, 196, 190, 0.753); /* Цвет кнопки "Товары" */
+  color: #d15a06; /* Цвет текста кнопки "Товары" */
+  padding: 10px 20px;
+  border: 1px solid #c76e08; /* Коричневая рамка */
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color   0.3s ease-in-out;
+  
+}
+

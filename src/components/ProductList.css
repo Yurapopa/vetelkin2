@@ -1,0 +1,29 @@
+/* ProductList.css */
+
+.product-list-container {
+    position: relative;
+  }
+  
+  .logo {
+    position: absolute;
+    top: 100px; /* Расстояние сверху */
+    left: 100px; /* Расстояние слева */
+  }
+  
+  /* Другие стили для контейнера товаров могут быть добавлены здесь */
+  
+  .product-list-container {
+    position: relative;
+  }
+  
+  .fixed-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent; /* Замените на ваш цвет фона */
+    z-index: -1; /* Помещаем фиксированный фон под контент */
+  }
+  
+  /* Другие стили для контейнера ProductList могут быть добавлены здесь */

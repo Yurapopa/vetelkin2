@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import "../index.css"
 import logo from "../images/logo.png"
+
 const ProductList = () => {
   const products = [
     { id: 1, name: 'Деревянный стул', price: 50, image: 'https://adas-mebel.ru/images/product/stul_nsm-1.jpg' },
@@ -19,7 +20,7 @@ const ProductList = () => {
     { id: 13, name: 'Деревянная копилка ', price: 44, image: 'https://qshti.kz/wp-content/uploads/2021/07/1E-1.png'},
     { id: 14, name: 'Деревянный Скворечник', price: 34, image: 'https://photoserver-airis.ru/images/items/277/7705277/7705277-00.jpg'},
     { id: 15, name: 'Деревянная  будка', price: 150, image: 'https://ir.ozone.ru/s3/multimedia-f/c1000/6639706743.jpg'},
-
+  
     
   ];
 
@@ -31,15 +32,9 @@ const ProductList = () => {
           <img src={logo} alt="Логотип" className="Logo-main" />
         </Link>
         <div className="top-buttons">
-          <Link to="/contacts">
-            <button className="top-button">Контакты</button>
+          <Link to="/Contacts">
           </Link>
-          <Link to="/payment">
-            <button className="top-button">Оплата</button>
-          </Link>
-          <Link to="/delivery">
-            <button className="top-button">Доставка</button>
-          </Link>
+         
         </div>
       </div>
       <h2>Товары</h2>
@@ -57,6 +52,7 @@ const ProductList = () => {
       </div>
     </div>
       <div class="footer">
+
       </div>
       <div className="bottom-text">
         <p>Все права защищаны</p>
@@ -64,5 +60,7 @@ const ProductList = () => {
     </>
   );
 }
+
+
 
 export default ProductList;

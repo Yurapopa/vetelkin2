@@ -1,32 +1,64 @@
 // Home.js
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../images/logo.png'
-const Home = () => {
+import logo from '../images/logo.png';
+import './Home.css';
+
+function Home() {
+  const [isModalOpen, setModalOpen] = useState(false);
+
+  const openModal = () => {
+    setModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalOpen(false);
+  };
+
   return (
     <div className="home-container">
+      {/* Фиксированный фон */}
+      <div className="fixed-background"></div>
+
       <div className="logo">
         <Link to="/">
           <img src={logo} alt="Логотип" />
         </Link>
       </div>
-      <div className="action-buttons">
-        <Link to="/contacts">
-          <button className="action-button">О нас</button>
-        </Link>
-        <Link to="/payment">
-          <button className="action-button">Оплата</button>
-        </Link>
-        <Link to="/delivery">
-          <button className="action-button">Доставка</button>
-        </Link>
+      <div className="button-container">
+        <div className="buttons-wrapper">
+          <div className="product-button">
+            <Link to="/products">
+              <button className="button nav-button transparent-button">Товары</button>
+            </Link>
+          </div>
+          <div className="company-button">
+            <button
+              className="button company-button transparent-button"
+              onClick={openModal}
+            >
+              О нас
+            </button>
+          </div>
+          <div className="cart-button">
+            <Link to="/cart"></Link>
+          </div>
+        </div>
       </div>
-      <div className="product-button">
-        <Link to="/products">
-          <button className="nav-button">Товары</button>
-        </Link>
-      </div>
-      {logo}
+
+      {isModalOpen && (
+        <div className="modal">
+          <div className="modal-content">
+            <h2>О нашей компании</h2>
+            <p>
+              Мы — талантливая команда профессионалов, стремящихся создать удивительные
+              вещи и улучшить вашу жизнь.
+            </p>
+            {/* Закрыть модальное окно по клику или другому действию */}
+            <button onClick={closeModal}>Закрыть</button>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

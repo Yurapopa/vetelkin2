@@ -1,0 +1,165 @@
+/* Home.css */
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  margin-bottom: 20px;
+}
+
+.newcomponent-buttons,  
+.product-button {
+  margin-bottom: 10px;
+}
+
+.button {
+  background-color: #3498db;
+  color: #000000;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.new-button {
+  background-color: #f5e6b7;
+}
+
+.nav-button {
+  background-color: #f5e6b7;
+}
+
+/* Home.css */
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left; /* Выравнивание по центру по вертикали */
+}
+
+.newcomponent-buttons,
+.product-button {
+  margin-top: 1px; /* Отступ между блоками кнопок */
+}
+
+/* Home.css */
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button-container {
+  display: flex;
+  gap: 10px; /* Отступ между кнопками */
+}
+
+.newcomponent-buttons,
+.product-button {
+  margin-top: 10px; /* Отступ между блоками кнопок */
+}
+
+.button {
+  background-color: #3498db;
+  color: #865700;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.new-button {
+  background-color: #f5e6b7;
+}
+
+.nav-button {
+  background-color: #f5e6b7;
+}
+
+.Absolute-Center 
+{
+width: 100%;
+text-align: center;
+}
+
+.button-wrapper{
+  position: relative;
+left: 50%;
+transform: translate(-50%, 0);	
+}
+
+/* Home.css */
+.transparent-button {
+  background-color: transparent;
+  border: 1px solid #f5e6b7; /* Добавьте граничный стиль, чтобы кнопки были видны */
+  color: #f5e6b7; /* Цвет текста (белый, чтобы был виден на прозрачном фоне) */
+  cursor: pointer;
+}
+
+/* Home.css */
+body {
+  background-image: url('https://c.pxhere.com/photos/d0/d6/background_tree_wood_boards_texture_wooden_background_old_brown-1370487.jpg!d'); /* Замените на путь к вашему full HD изображению фона */
+}
+
+.home-container {
+  position: relative;
+}
+
+.fixed-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent; /* Замените на ваш цвет фона */
+  z-index: -1; /* Помещаем фиксированный фон под контент */
+}
+
+/* Другие стили для контейнера Home могут быть добавлены здесь */
+
+/* Home.css */
+.home-container {
+  position: relative;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+
+/* Home.css */
+.home-container {
+  position: relative;
+  min-height: 100vh; /* Это обеспечивает, чтобы блок занимал всю высоту видимой части экрана */
+}
+
+ы
+
+.black-block {
+  background-color: #000;
+  height: 100px; /* Высота блока, которую вы можете изменить по своему усмотрению */
+  width: 100%;
+}
+
